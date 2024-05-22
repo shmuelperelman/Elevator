@@ -4,8 +4,8 @@ import ding from './ding.mp3';
 
 const FLOORS = 9;
 const ELEVATORS = 3;
-const SPEED_PER_FLOOR = 500; // מהירות של חצי שנייה לכל קומה
-const STOP_TIME = 2000; // זמן עצירה של 2 שניות בכל קומה
+const SPEED_PER_FLOOR = 500; 
+const STOP_TIME = 2000; 
 
 const ElevatorSystem = () => {
   const [elevators, setElevators] = useState(
@@ -127,7 +127,6 @@ const ElevatorSystem = () => {
       newFloorRequests[prevElevators[index].currentFloor] = false;
       setFloorRequests(newFloorRequests);
 
-      // Play ding sound when elevator reaches target floor
       new Audio(ding).play();
 
       return newElevators;
