@@ -163,7 +163,7 @@ const ElevatorSystem = () => {
             style={{
               bottom: `${elevator.currentFloor * 110}px`,
               left: `${index * 60}px`,
-              transition: `bottom ${SPEED_PER_FLOOR}ms linear`,
+              transition:  `bottom ${SPEED_PER_FLOOR}ms linear`,
             }}
           />
         ))}
